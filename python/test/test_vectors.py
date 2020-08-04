@@ -12,11 +12,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+"""
+Module that provide the test vectors from the protocol reference.
+
+Includes a class TestVector that structure the information provided, as well as
+two constants of type TestVector that represents test vectors #1 and #2 from the
+protocol reference.
+"""
+
 import pyglome
 
 
 class TestVector:
-    """Class that encapsulate needed components for testing."""
+    """Class that encapsulate structures information needed  testing."""
 
     def __init__(self, kap, ka, kbp, kb, counter, msg, sk, tag):
         self.kap = bytes.fromhex(kap)

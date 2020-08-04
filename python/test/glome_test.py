@@ -130,14 +130,14 @@ class GlomeTestBase:
 
 
 class GlomeTest1(unittest.TestCase, GlomeTestBase):
-
+    """Glome test using test vector #2 from the protocol documentation."""
     def __init__(self, *args, **kwargs):
         super(__class__, self).__init__(*args, **kwargs)
         self.test_vector = GlomeTestVector(test_vectors.TEST1, 8)
 
 
 class GlomeTest2(unittest.TestCase, GlomeTestBase):
-
+    """Glome test using test vector #2 from the protocol documentation."""
     def __init__(self, *args, **kwargs):
         super(__class__, self).__init__(*args, **kwargs)
         self.test_vector = GlomeTestVector(test_vectors.TEST2, 8)

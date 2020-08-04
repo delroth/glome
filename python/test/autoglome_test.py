@@ -97,14 +97,14 @@ class AutoGlomeTestBase:
 
 
 class AutoGlomeTest1(unittest.TestCase, AutoGlomeTestBase):
-    """Implements Logic for test vector #1 from the protocol documentation."""
+    """Autoglome test using test vector #1 from the protocol documentation."""
     def __init__(self, *args, **kwargs):
         super(__class__, self).__init__(*args, **kwargs)
         self.test_vector = AutoGlomeTestVector(test_vectors.TEST1, 8, 0)
 
 
 class AutoTest2(unittest.TestCase, AutoGlomeTestBase):
-    """Implements Logic for test vector #2 from the protocol documentation."""
+    """Autoglome test using test vector #2 from the protocol documentation."""
     def __init__(self, *args, **kwargs):
         self.test_vector = AutoGlomeTestVector(test_vectors.TEST2, 8, 0)
         super(__class__, self).__init__(*args, **kwargs)
